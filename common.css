@@ -1,0 +1,38 @@
+    body{
+          background-color: #001626;
+          color: white;
+          border: 1px solid goldenrod;
+          margin: auto;
+      }
+      p{
+          background-color: #002030;
+          color: white;
+          border:1px solid goldenrod;
+          margin-left: 10px;
+          margin-right: 10px;
+
+      }
+      img{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      div>p{
+
+          padding: 10px;
+      }
+      a{
+          text-decoration: none;
+          color: white;
+          }
+      .effect{
+          color:goldenrod;
+      }
+      .index{
+          font-size: 20px;
+          color: white;
+          text-decoration: none;
+      }
+      .num{
+          color: beige;
+      }

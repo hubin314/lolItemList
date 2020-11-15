@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="EUC-KR">
+
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function func1() {
+
+		//alert("성공");
+
+		//document.getElementsByName("name");  //태그의 name 속성이 name인 태그를 모두 찾음(name은 중복가능)
+
+		//document.getElementById("test");  //id가 test인 태그를 찾음 (id는 중복불가)
+
+		var tag1 = "이름 : <input type='text' name='irum' />";
+
+		var tag2 = "나이 : <input type='text' name='nai' />";
+
+		
+
+		//.innerHTML = "str" : 해당 태그 안에  str를 덮어씌움
+
+		document.getElementById("test1").innerHTML = tag1;			
+
+		document.getElementById("test2").innerHTML = tag2;
+
+	}	
+
+	
+
+	function func2() {
+
+		//alert("성공2");
+
+		var str1 = "<b style='font-size:24px'>일반 메시지로 변경</b>";
+
+		var str2 = "<b style='font-size:24px'>나도 변경</b>";
+
+		document.getElementById("test1").innerHTML = str1;
+
+		document.getElementById("test2").innerText = str2;
+
+			//.innerText = "str" : str 자체가 출력되도록 변환 후 덮어씌움
+
+			// 예)str : <b> b태그 </b> ==> &lt;b&gt; b태그 &lt;/b&gt;
+
+	}
+
+	
+
+</script>
+
+</head>
+
+<body>
+
+	** 진행 중 태그 및 자료 변경 **
+
+	<br />
+
+	<div id="test1">innerHTML은 현재 화면 자료를 일부 수정</div>
+
+	<div id="test2">안녕하세요</div>
+
+	<input type="button" value="처리1" onclick="func1()">
+
+	<input type="button" value="처리2" onclick="func2()">
+
+
+
+</body>
+
+</html>
